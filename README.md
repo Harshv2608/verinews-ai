@@ -76,7 +76,7 @@ This project combines predictive modeling with explainability to make AI decisio
 
 ### 1️⃣ Clone the Repository
 
-    git clone https://github.com/YOUR_USERNAME/verinews-ai.git
+    git clone https://github.com/Harshv2608/verinews-ai.git
     cd verinews-ai
 
 ### 2️⃣ Create Virtual Environment
