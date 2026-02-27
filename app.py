@@ -4,7 +4,19 @@ import numpy as np
 from scipy.sparse import hstack
 import spacy
 import re
+import os
+import joblib
+from train_model import train
 
+MODEL_PATH = "models/fake_news_model.pkl"
+
+if not os.path.exists(MODEL_PATH):
+    print("Model not found. Training automatically...")
+    train()
+
+model_data = joblib.load(MODEL_PATH)
+model = model_data["model"]
+vectorizer = model_data["vectorizer"]
 app = Flask(__name__)
 
 # -----------------------------
